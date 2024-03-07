@@ -1,0 +1,38 @@
+@import 'variable';
+@import 'mixins';
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: $primary-color;
+  color: #fff;
+
+  .brand-logo {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  nav {
+    ul {
+      display: flex;
+      list-style: none;
+      
+      li {
+        margin: 0 1rem;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 1.2rem;
+          
+          &:hover {
+            color: darken($primary-color, 15%);
+          }
+        }
+      }
+    }
+  }
+}
+
